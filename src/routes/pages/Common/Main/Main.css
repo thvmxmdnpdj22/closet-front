@@ -1,0 +1,127 @@
+/* main.css */
+
+/* 앱 이름 스타일 */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: red; /* 빨간색 텍스트로 변경 */
+  }
+  
+  /* 헤더 버튼 영역 스타일 */
+  .header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  /* 헤더 버튼 스타일 */
+  .header-buttons button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .header-buttons button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* main.css */
+
+/* 검색창과 버튼을 담는 컨테이너 스타일 */
+.search-container {
+    display: flex;
+    align-items: center; /* 수직 정렬 */
+    justify-content: center;
+  }
+  
+  /* 검색창 스타일 */
+  .search-container input[type="text"] {
+    width: 70%;
+    max-width: 300px;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* 버튼 공통 스타일 */
+  .search-container button {
+    margin-left: 10px; /* 버튼들 사이의 간격 설정 */
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* 버튼에 호버 스타일 적용 */
+  .search-container button:hover {
+    background-color: #0056b3;
+  }
+
+.chat-button-container {
+    position: fixed;
+    bottom: 20px; /* 원하는 위치로 조정하세요 */
+    right: 20px; /* 원하는 위치로 조정하세요 */
+}
+
+.chat-button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-button:hover {
+    background-color: #0056b3;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  max-height: calc(100vh - 100px); /* 화면 높이의 100px 빼고 최대 높이 설정 */
+  overflow-y: auto; /* 내용이 모달의 높이보다 클 경우 스크롤 생성 */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.post-list .product {
+  width: 30%;
+}
