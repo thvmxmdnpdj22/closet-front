@@ -5,3 +5,4 @@
 */
 
 export { default as Main } from './Common/Main';
+export { default as Ask } from './Common/Ask';

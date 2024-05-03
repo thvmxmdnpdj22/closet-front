@@ -1,0 +1,58 @@
+.ask-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+.ask-wrap {
+    width: 80%;
+    background-color: #00000010;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 0.5rem;
+
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.ask-wrap .ask-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ask-title .arrow {
+    transition: 0.25s;
+}
+
+.ask-title .arrow.show {
+    transform: rotate(-90deg);
+}
+
+.ask-title .arrow.hidden {
+    transform: rotate(0deg);
+}
+
+.ask-title .ask-content {
+    visibility: hidden;
+}
+
+.ask-title.show + .ask-content {
+    visibility: visible;
+}
+
+.ask-wrap .ask-content {
+    border-top: 1px dashed black;
+    padding-top: 0.5rem;
+    font-weight: 400;
+    font-size: 14pt;
+}

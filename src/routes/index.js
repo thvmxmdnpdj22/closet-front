@@ -9,7 +9,7 @@ import React, { useState, useEffect } from "react";
 import { Route, Routes, useFetcher } from 'react-router-dom';
 
 /* 사용자가 만든 페이지를 모아놓은 파일에서 페이지를 불러온다. */
-import { Main } from "./pages";
+import { Main, Ask } from "./pages";
 
 /* 아래 부분에서 링크와 페이지를 연결시킨다. */
 const Router = () => {
@@ -41,6 +41,10 @@ const Router = () => {
                         * 맥의 경우 Command를 누르신 뒤 App을 클릭하시면 해당 파일로 이동하실 수 있습니다.
                     */
                     element={<Main />}
+                />
+                <Route
+                    path="/ask"
+                    element={<Ask/>}
                 />
             </Routes>
         </div>

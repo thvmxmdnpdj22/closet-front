@@ -23,49 +23,75 @@ const postsData = [
         price: "150,000",
         description: "일주일정도 사용하였고 하자 없습니다."
     },
+    {
+        id: 4,
+        title: "정장",
+        image: "https://m.tgfsmall.co.kr/web/product/big/202302/6670e9a80d371326da680f4ef89db7bd.jpg",
+        price: "50,000",
+        description: "정장 대여해드립니다."
+    },
+    {
+        id: 5,
+        title: "패딩",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxfpFzkK61SDdSLcrV0R3zjPNhSGS3LTf_OA&usqp=CAU",
+        price: "50,000",
+        description: "입지않는 고가 패딩 대여해드립니다."
+    },
+    {
+        id: 6,
+        title: "애플워치",
+        image: "https://static.rethinkmall.com/goods-images/118350/large/1",
+        price: "150,000",
+        description: "구매한지 3일정도 된 새상품입니다."
+    },
+    {
+        id: 7,
+        title: "신발",
+        image: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b7d9211c-26e7-431a-ac24-b0540fb3c00f/%EC%97%90%EC%96%B4-%ED%8F%AC%EC%8A%A4-1-07-%EB%82%A8%EC%84%B1-%EC%8B%A0%EB%B0%9C-TttlGpDb.png",
+        price: "80,000",
+        description: "박스랑 신발끈 여분도 드려요."
+    }
     // 추가적인 게시글 데이터를 필요에 따라 작성할 수 있습니다.
 ];
 
-const MainPresenter = ({ appName, onSearch, onSort, searchQuery, setSearchQuery }) => {
-    const [showModal, setShowModal] = useState(false); // 모달 창 열림 여부
-    const [selectedPost, setSelectedPost] = useState(null); // 선택된 게시글
+const MainPresenter = ({ appName, onSearch, onSort, searchQuery, setSearchQuery, navigate }) => {
+    const [showModal, setShowModal] = useState(false);
+    const [selectedPost, setSelectedPost] = useState(null);
 
-    // 게시글 모달 열기
     const handlePostClick = (post) => {
         setSelectedPost(post);
         setShowModal(true);
     };
 
-    // 모달 닫기
     const handleCloseModal = () => {
         setShowModal(false);
         setSelectedPost(null);
     };
 
-    // 찜 버튼 클릭 시 실행되는 함수
     const handleBookmarkClick = () => {
         console.log("찜 버튼 클릭");
-        // 여기에 찜 기능을 추가할 수 있습니다.
     };
 
-    // 공유 버튼 클릭 시 실행되는 함수
     const handleShareClick = () => {
         console.log("공유 버튼 클릭");
-        // 여기에 공유 기능을 추가할 수 있습니다.
     };
 
-    // 채팅 버튼 클릭 시 실행되는 함수
     const handleChatClick = () => {
         console.log("채팅 버튼 클릭");
-        // 여기에 채팅 기능을 추가할 수 있습니다.
     };
+
+    // 검색어에 따라 게시글을 필터링하는 함수
+    const filteredPosts = postsData.filter(post =>
+        post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.description.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
     return (
         <div>
             <h1>{appName}</h1>
             <div className="header-buttons">
                 <button onClick={() => console.log("로그인 버튼 클릭")}>로그인</button>
-                <button onClick={() => console.log("상담사 채팅 버튼 클릭")}>상담사 채팅</button>
+                <button onClick={() => navigate('/ask')}>고객센터</button>
                 <button onClick={() => console.log("커뮤니티 버튼 클릭")}>커뮤니티</button>
                 <button onClick={() => console.log("마이페이지 버튼 클릭")}>마이페이지</button>
             </div>
@@ -80,28 +106,28 @@ const MainPresenter = ({ appName, onSearch, onSort, searchQuery, setSearchQuery 
                 <button onClick={onSort}>정렬</button>
             </div>
             <div className="chat-button-container">
-                <button className="chat-button" onClick={() => console.log("채팅 버튼 클릭")}>채팅</button>
+                <button className="chat-button" onClick={() => console.log("채팅 버튼 클릭")}>💬</button>
             </div>
-            {/* 게시글 목록 */}
             <div className="post-list">
-                {postsData.map(post => (
+                {filteredPosts.map(post => (
                     <div key={post.id} className="post" onClick={() => handlePostClick(post)}>
-                        <h2>{post.title}</h2>
-                        <img src={post.image} alt={post.title}  className="product"/>
-                        <p>가격: {post.price}</p>
-                        <p>{post.description}</p>
-                        {/* 추가된 버튼들 */}
-                        <div className="post-buttons">
-                            <button onClick={(e) => { e.stopPropagation(); handleBookmarkClick() }}>찜</button>
-                            <button onClick={(e) => { e.stopPropagation(); handleShareClick() }}>공유</button>
-                            <button onClick={(e) => { e.stopPropagation(); handleChatClick() }}>채팅</button>
+                        <div className="post-wrap">
+                            <h2>{post.title}</h2>
+                            <img src={post.image} alt={post.title} className="product" />
+                            <p>가격: {post.price}</p>
+                            <p>{post.description}</p>
+                            <div className="post-buttons">
+                                {/* 여기에 추가 */}
+                                <button className="" onClick={(e) => { e.stopPropagation(); handleBookmarkClick(); e.target.className = e.target.className.length ? '' : 'clicked-button' }}>❤️</button>
+                                <button onClick={(e) => { e.stopPropagation(); handleShareClick() }}>💏</button>
+                                <button onClick={(e) => { e.stopPropagation(); handleChatClick() }}>💬</button>
+                            </div>
                         </div>
                     </div>
                 ))}
             </div>
-            {/* 게시글 모달 */}
             {showModal && (
-                <div className="modal">
+                <div className="modal-container">
                     <div className="modal-content">
                         <span className="close" onClick={handleCloseModal}>&times;</span>
                         <h2>{selectedPost.title}</h2>
