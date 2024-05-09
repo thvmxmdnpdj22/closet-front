@@ -8,7 +8,7 @@ const AskBox = ({
     console.log(asks)
     return (
         <div className="ask-box">
-            <h2>고객센터</h2>
+            <h2>자주 묻는 질문(FAQ)</h2>
             {
                 asks?.map((ask, idx) => (
                     <div className="ask-wrap" onClick={() => {

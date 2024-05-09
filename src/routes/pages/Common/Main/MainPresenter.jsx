@@ -50,6 +50,41 @@ const postsData = [
         image: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b7d9211c-26e7-431a-ac24-b0540fb3c00f/%EC%97%90%EC%96%B4-%ED%8F%AC%EC%8A%A4-1-07-%EB%82%A8%EC%84%B1-%EC%8B%A0%EB%B0%9C-TttlGpDb.png",
         price: "80,000",
         description: "박스랑 신발끈 여분도 드려요."
+    },
+    {
+        id: 8,
+        title: "모자",
+        image: "https://cdn1-aka.makeshop.co.kr/shopimages/marhenj/0300000003292.jpg?1697509328",
+        price: "15,000",
+        description: "큰 사이즈로 나와서 여유있게 착용 가능하십니다."
+    },
+    {
+        id: 9,
+        title: "에어팟 pro",
+        image: "https://i.namu.wiki/i/2Wg0Ga8nuKz1qC29HBh3sXZX8c0EyfvYKHeH5ruL9uy8XYrX2X8XZnPOMdfkHGbqekm1O2gTg_wKAA7syMCnVw.webp",
+        price: "150,000",
+        description: "전에 쓰던 에어팟을 찾게 되어 판매합니다."
+    },
+    {
+        id: 10,
+        title: "와인",
+        image: "https://www.shinsegae-lnb.com/upload/product/wine/wine/images/G7%20%EA%B9%8C%EB%B2%A0%EB%A5%B4%EB%84%A4%20%EC%86%8C%EB%B9%84%EB%87%BD%20(%EB%B9%84%EA%B1%B4).jpg",
+        price: "50,000",
+        description: "선물받았지만 술을 못마셔서 판매합니다."
+    },
+    {
+        id: 11,
+        title: "식기세트",
+        image: "https://img.danawa.com/prod_img/500000/739/570/img/13570739_1.jpg?_v=20220927160838",
+        price: "70,000",
+        description: "귀여운 짱구 식기세트 판매합니다."
+    },
+    {
+        id: 12,
+        title: "맨투맨",
+        image: "https://cafe24img.poxo.com/forseasonn/web/product/big/202310/f16bc147d3d305c326291e9b49895fc4.jpg",
+        price: "10,000",
+        description: "보폴 조금 있습니다."
     }
     // 추가적인 게시글 데이터를 필요에 따라 작성할 수 있습니다.
 ];
