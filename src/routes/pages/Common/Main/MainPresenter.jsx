@@ -93,22 +93,16 @@ const MainPresenter = ({
 
             {/* 아래는 children을 전달받아 띄워주는 형식이므로 여는 태그, 닫는 태그의 구분이 필요함 */}
             <DBConnectTest>
-                <div>
-                    <button onClick={() => navigate('/signup')}>회원가입</button>
-                    <div></div> 
-                </div>
+                <div className="nav-button">
+                    <div className="community-button">
+                    <button onClick={() => navigate('/community')}>커뮤니티</button>
+                    </div>
 
-                <div>
+                    <button onClick={() => navigate('/signup')}>회원가입</button>
+
+               
                     <button onClick={() => navigate('/signin')}>로그인</button>
-                    <div></div>
-                </div>
-                <div className="main-bt">
-                    <div>
-                        <button onClick={() => navigate('/community')}>게시판</button>
-                    </div>
-                    <div>
-                        {/* <button onClick={() => navigate('/signup')}>회원가입화면</button> */}
-                    </div>
+                    
                 </div>
             </DBConnectTest>
         </div>
