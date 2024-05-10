@@ -9,34 +9,29 @@ const SignUpPresenter = ({
     navigate,
     SignUp,
 
-    handleIdChange,
-    handlePasswordChange,
-    handlePasswordcheckChange,
-    handleNicknameChange,
-    handleBirthdayChange,
-    handleAddressChange,
-    handlePhoneNumberChange,
-    handleSecurityQuestionChange,
-    handleSecurityAnswerChange,
-    // handlePwCheck,
-    // handleEmailCheck,
-    
+    setId,
+    setPassword,
+    setPasswordcheck,
+    setNickname,
+    setBirthday,
+    setAddress,
+    setPhoneNumber,
 
+    setSecurityAnswer,
 
     id,
-    // email,
     password,
     passwordcheck,
     nickname,
-    // isCheckPw,
-    checkPw,
+
     birthday,
     address,
     phoneNumber,
-    // isCheckEmail,
-    // checkEmail
+
     securityQuestion,
-    securityAnswer
+    securityAnswer,
+
+
 
     
     
@@ -46,21 +41,17 @@ const SignUpPresenter = ({
         <div className="signup-container">
             <h1>회원가입</h1>
             <SignUpBox
-                handleIdChange={handleIdChange}
-                handlePasswordChange={handlePasswordChange}
-                handlePasswordcheckChange={handlePasswordcheckChange}
-                handleNicknameChange={handleNicknameChange}
-                handleBirthdayChange={handleBirthdayChange}
-                handleAddressChange={handleAddressChange}
-                handlePhoneNumberChange={handlePhoneNumberChange}
-                handleSecurityQuestionChange={handleSecurityQuestionChange}
-                handleSecurityAnswerChange={handleSecurityAnswerChange}
-                // handleMessageChange5={handleMessageChange5}
-                // handlePwCheck={handlePwCheck}
-                // handleEmailCheck={handleEmailCheck}
+                setId={setId}
+                setPassword={setPassword}
+                setPasswordcheck={setPasswordcheck}
+                setNickname={setNickname}
+                setBirthday={setBirthday}
+                setAddress={setAddress}
+                setPhoneNumber={setPhoneNumber}
+    
+                setSecurityAnswer={setSecurityAnswer}
 
                id={id}
-            //    email={email}
                password={password}
                passwordcheck={passwordcheck}
                nickname={nickname}
@@ -72,10 +63,6 @@ const SignUpPresenter = ({
                securityAnswer={securityAnswer}
 
                isSignUp={isSignUp}
-            //    isCheckPw={isCheckPw}
-            //    isCheckEmail={isCheckEmail}
-            //    checkPw={checkPw}
-            //    checkEmail={checkEmail}
 
         
 
@@ -85,8 +72,6 @@ const SignUpPresenter = ({
             <div className="button-control">
             <button onClick={SignUp}>회원가입</button>
             <button onClick={() => {navigate(-1)}}>뒤로가기</button>
-            {/* <button onClick={checkPw}>비밀번호 확인</button> */}
-            {/* <button onClick={checkEmail}>이메일확인</button> */}
             </div>
             
             

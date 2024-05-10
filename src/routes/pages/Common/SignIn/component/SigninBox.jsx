@@ -4,8 +4,8 @@ import { Input } from "../../component/Input/Input";
 export const SignInBox =({
     id,
     password,
-    handleMessageChange,
-    handleMessageChange2,
+    setId,
+    setPassword,
 })=>{
     return(
         <div className="signin">
@@ -14,13 +14,13 @@ export const SignInBox =({
                 type={'text'}
                 placeholder={'아이디를 입력하세요.'}
                 value={id}
-                onChange={handleMessageChange}/>
+                onChange={(e)=>setId(e.target.value)}/>
             <Input
                 title={'비밀번호'}
                 type={'text'}
                 placeholder={'비밀번호를 입력하세요.'}
                 value={password}
-                onChange={handleMessageChange2}/>
+                onChange={(e)=>setPassword(e.target.value)}/>
         </div>
     )
 }

@@ -103,9 +103,9 @@ const MainPresenter = ({
                     <div></div>
                 </div>
                 <div className="main-bt">
-                    {/* <div>
-                        <button onClick={() => navigate('/signin')}>로그인화면</button>
-                    </div> */}
+                    <div>
+                        <button onClick={() => navigate('/community')}>게시판</button>
+                    </div>
                     <div>
                         {/* <button onClick={() => navigate('/signup')}>회원가입화면</button> */}
                     </div>

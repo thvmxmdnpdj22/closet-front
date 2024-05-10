@@ -9,6 +9,8 @@ import MainPresenter from "./MainPresenter";
     * Presenter: 불러온 데이터를 토대로 페이지에 출력, 함수 사용
 */
 const MainContainer = () => {
+    
+
     const [text, setText] = useState('');
     const [isSignUp, setIsSignUp] = useState(null);
     const [isSignIn, setIsSignIn] = useState(null);

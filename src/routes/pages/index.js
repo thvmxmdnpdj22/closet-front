@@ -9,3 +9,6 @@ export { default as SignUp } from './Common/SignUp';
 export { default as SignIn } from './Common/SignIn';
 export { default as FindId } from './Common/FindId';
 export { default as FindPw } from './Common/FindPw';
+export { default as PwChange} from './Common/PwChange';
+export { default as Community} from './Common/Community';
+export { default as PostPage } from './Common/PostPage';

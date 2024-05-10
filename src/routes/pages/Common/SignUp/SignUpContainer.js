@@ -9,7 +9,6 @@ const SignUpContainer = () => {
 
     const [isSignUp, setIsSignUp] = useState(null);
     const [id, setId] = useState('');
-    // const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [passwordcheck, setPasswordcheck] = useState('');
     const [nickname, setNickname] = useState('');
@@ -23,7 +22,10 @@ const SignUpContainer = () => {
     const SignUp = async () => {
         // API 호출 전 입력 값 확인
         // 필수인데 비어있는게 있으면 호출이 안되게
-
+        
+        /**
+         * 빈칸 에러 처리
+         */
         const missingFields = [];
         if (!id) missingFields.push("아이디");
         if (!password) missingFields.push("비밀번호");
@@ -57,11 +59,8 @@ const SignUpContainer = () => {
         });
 
         const data = await result.json();
-        // console.log("성공")
-        // console.log(id, email, password, passwordcheck, nickname,checkPw)
         setIsSignUp(true)
-        // alert('회원가입이 완료 되었습니다.');
-        // navigate('/signin')
+       
     }
 
     useEffect(() => {
@@ -74,38 +73,6 @@ const SignUpContainer = () => {
         }
     }, [isSignUp]);
 
-    const handleIdChange = (e) => {
-       setId(e.target.value);
-    };//setMessage 는 메세지를 변경시키는 함수 handleMassage 는 내가 직접 만든 함수
-
-
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    };
-
-    const handlePasswordCheckChange= (e) => {
-        setPasswordcheck(e.target.value);
-    };
-
-    const handleNicknameChange = (e) => {
-        setNickname(e.target.value);
-    };
-
-    const handleBirtdayChange = (e) => {
-        setBirthday(e.target.value)
-    };
-
-    const handleAddressChange = (e) => {
-        setAddress(e.target.value)
-    };
-
-    const handlePhoneNumberChange = (e) => {
-        setPhoneNumber(e.target.value)
-    };
-
-    const handleSecurityAnswerChange = (e) => {
-        setSecurityAnswer(e.target.value)
-    };
 
     return (
         <SignUpPresenter
@@ -113,16 +80,6 @@ const SignUpContainer = () => {
             SignUp = {SignUp}
             navigate = {navigate}
 
-            handleIdChange = {handleIdChange}
-            handlePasswordChange = {handlePasswordChange}      
-            handlePasswordcheckChange = {handlePasswordCheckChange}
-            handleNicknameChange = {handleNicknameChange}
-           
-            handleAddressChange={handleAddressChange}
-            handleBirthdayChange={handleBirtdayChange}
-            handlePhoneNumberChange={handlePhoneNumberChange}
-
-            handleSecurityAnswerChange={handleSecurityAnswerChange}
          
            id={id}
            password={password}

@@ -5,6 +5,13 @@ import {useNavigate} from "react-router-dom";
 
 const SignInContainer = () => {
     
+    const testData = {
+        id: "qwer",
+        password: "123"
+    };
+    console.log(testData)
+    console.log(testData.id)
+    console.log(testData.password)
 
     const navigate = useNavigate();
 
@@ -23,6 +30,11 @@ const SignInContainer = () => {
             return; // 필수 입력 필드가 누락되면 함수 실행 중지
         }
 
+        if (id != testData.id) {
+            alert("김권후")
+            return;
+        }
+
         const result = await fetch('http://localhost:3333/user/signin', {
             method: 'get',
             headers: {
@@ -34,21 +46,12 @@ const SignInContainer = () => {
         });
 
         const data = await result.json();
-        // console.log(data)
-        // console.log("성공")
-        // console.log(id,password)
         setIsSignIn(true)
         alert('로그인 완료')
+        navigate('/')
 
     }
     
-    const handleMessageChange = (e) => {
-        setId(e.target.value);
-    };
-
-    const handleMessageChange2 = (e) => {
-        setPassword(e.target.value);
-    };
 
 
     return(
@@ -60,8 +63,7 @@ const SignInContainer = () => {
             id={id}
             password={password}
 
-            handleMessageChange={handleMessageChange}
-            handleMessageChange2={handleMessageChange2}
+            
 
             setId={setId}
             setPassword={setPassword}

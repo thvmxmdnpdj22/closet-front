@@ -1,31 +1,52 @@
-.signin-contanier{
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 0rem;
+.signin-contanier {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
     border: 1px solid #ccc;
-    border-radius:5px;
-    box-sizing: border-box;
-}
-.signin-contanier input {
-    width: 100%; /* 입력 필드를 부모 요소의 가로 길이에 맞게 확장합니다. */
-    padding: 0.5rem; /* 입력 필드 내부 여백을 조절합니다. */
-    margin-bottom: 0rem; /* 아래쪽으로 여유 공간을 추가합니다. */
-    border: 1px solid #ccc; /* 테두리 스타일을 설정합니다. */
-    border-radius: 5px; /* 입력 필드의 모서리를 둥글게 만듭니다. */
-    box-sizing: border-box; /* padding과 border를 포함한 크기를 설정합니다. */
-}
-
-/* 선택 상태일 때 스타일 */
-.signin-contanier input:focus {
-    border-color: #007bff; /* 포커스 시 테두리 색상을 변경합니다. */
-    outline: none; /* 포커스 시 기본 외곽선을 제거합니다. */
-}
-.signin-contanier .button-control {
-    display: flex; /* 요소들을 가로로 나열하기 위해 flexbox를 사용합니다 */
-    gap: 1rem; /* 버튼들 사이의 간격을 설정합니다 */
-}
-
-/* 버튼 스타일 */
-.signin-contanier .button-control button {
-    padding: 0.5rem 1rem; /* 버튼의 내부 여백을 설정합니다 */
-}
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .signin-contanier h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .button-control {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .button-control button {
+    margin-right: 30px;
+    padding: 8px 16px;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button-control button:hover {
+    background-color: #0056b3;
+  }
+  .button-control2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .button-control2 button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .button-control2 button:hover {
+    background-color: #0056b3;
+  }

@@ -9,7 +9,7 @@ import React, { useState, useEffect } from "react";
 import { Route, Routes, useFetcher } from 'react-router-dom';
 
 /* 사용자가 만든 페이지를 모아놓은 파일에서 페이지를 불러온다. */
-import { Main, SignUp, SignIn, FindId, FindPw} from "./pages";
+import { Main, SignUp, SignIn, FindId, FindPw, PwChange, Community,PostPage} from "./pages";
 
 /* 아래 부분에서 링크와 페이지를 연결시킨다. */
 const Router = () => {
@@ -56,6 +56,15 @@ const Router = () => {
                 <Route
                     path="findpw"
                     element={<FindPw />}></Route>
+                <Route path="pwchange"
+                        element={<PwChange />} 
+                /> 
+                <Route
+                    path="community"
+                    element={<Community/>}></Route>
+                <Route
+                    path="postpage"
+                    element={<PostPage/>}></Route>
             </Routes>
         </div>
     )
