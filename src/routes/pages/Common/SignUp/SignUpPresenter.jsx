@@ -26,7 +26,10 @@ const SignUpPresenter = ({
     detailedAddress,
     phoneNumber,
     securityQuestion,
-    securityAnswer
+    securityAnswer,
+    checkIdAvailability,
+    handlePasswordChange,
+    passwordError,
 }) => {
     return (
         <div className="signup-container">
@@ -54,6 +57,9 @@ const SignUpPresenter = ({
                 securityQuestion={securityQuestion}
                 securityAnswer={securityAnswer}
                 isSignUp={isSignUp}
+                checkIdAvailability={checkIdAvailability}
+                handlePasswordChange={handlePasswordChange}
+                passwordError={passwordError}
             />
             <div className="button-control">
                 <button onClick={SignUp}>회원가입</button>

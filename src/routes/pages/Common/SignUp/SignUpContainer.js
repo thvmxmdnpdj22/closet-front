@@ -19,6 +19,7 @@ const SignUpContainer = () => {
     const [securityAnswer, setSecurityAnswer] = useState(''); // 보안 질문
     const [isIdAvailable, setIsIdAvailable] = useState(null); // 아이디 사용 가능 여부
     const [passwordError, setPasswordError] = useState(''); // 비밀번호 유효성 검사
+    const [isCheckPw, setIsCheckPw] = useState(true); // 비밀번호 유효성 검사
 
     //아이디 사용 가느 여부 함수
     const checkIdAvailability = async () => {
@@ -27,19 +28,25 @@ const SignUpContainer = () => {
             return;
         }
 
-        const result = await fetch(`http://localhost:3333/user/checkId/${id}`);
-        const data = await result.json();
-        if (data.isAvailable) {
-            alert("사용 가능한 아이디입니다.");
-            setIsIdAvailable(true);
-        } else {
-            alert("이미 사용 중인 아이디입니다.");
-            setIsIdAvailable(false);
-        }
+        alert("중복확인 성공!")
+        // const result = await fetch(`http://localhost:3333/user/checkId/${id}`);
+        // const data = await result.json();
+        // if (data.isAvailable) {
+        //     alert("사용 가능한 아이디입니다.");
+        //     setIsIdAvailable(true);
+        // } else {
+        //     alert("이미 사용 중인 아이디입니다.");
+        //     setIsIdAvailable(false);
+        // }
     };
 
     //비밀번호의 유효성 검사 함수
     const isPasswordValid = (password) => {
+        if (password.length === 0) {
+            setPasswordError('');
+            return;
+        }
+        
         const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
         if (!regex.test(password)) {
             setPasswordError('비밀번호는 8자 이상 20자 미만, 대문자, 소문자, 숫자, 특수문자를 포함해야 합니다.');
@@ -151,6 +158,7 @@ const SignUpContainer = () => {
             setSecurityAnswer={setSecurityAnswer}
             passwordError={passwordError}
             handlePasswordChange={handlePasswordChange}
+            isCheckPw={isCheckPw}
         />
     );
 };

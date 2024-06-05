@@ -25,6 +25,8 @@ export const SignUPBox = ({
     setPhoneNumber,
     setSecurityAnswer,
     checkIdAvailability,
+    handlePasswordChange,
+    passwordError,
 }) => {
     const [isPostcodeOpen, setIsPostcodeOpen] = useState(false);
 
@@ -56,12 +58,13 @@ export const SignUPBox = ({
                     type={'password'}
                     placeholder={"비밀번호를 입력해주세요"}
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => handlePasswordChange(e)}
                     minLength={8}
                     maxLength={20}
                 />
                 <div>
-                    <span>비밀번호는 8자이상, 특수문자를 하나 이상 포함해야 합니다.</span>
+
+                    <div>{passwordError}</div>
                 </div>
             </div>
             
