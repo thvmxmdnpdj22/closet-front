@@ -1,0 +1,31 @@
+/* .Input-id {
+    width: 20%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+} */
+.Input-id {
+    margin-bottom: 15px; /* 아이디 입력 부분과 다른 입력 요소 사이의 간격 */
+  }
+  
+  .Input-id h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .Input-id input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .Input-id input:focus {
+    outline: none;
+    border-color: #007bff; /* 포커스 시 파란색 테두리 */
+  }

@@ -1,0 +1,53 @@
+/* Community.css */
+.community-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center; /* 검색 입력창과 버튼을 수직 중앙 정렬 */
+  justify-content: space-between; /* 커뮤니티 글자와 검색 입력창 사이에 간격 생성 */
+  margin-bottom: 20px; /* 하단 여백 추가 */
+}
+
+.community-title {
+  font-size: 24px; /* 커뮤니티 제목을 좀 더 크게 설정 */
+}
+
+.search-container {
+  display: flex;
+  align-items: center; /* 검색 입력창과 버튼을 수직 중앙 정렬 */
+}
+
+.footer-container {
+  display: flex;
+  align-items: center; /* 뒤로가기 버튼을 수직 중앙 정렬 */
+  justify-content: space-between; /* 왼쪽과 오른쪽을 최대한 멀리 배치 */
+  margin-top: 20px; /* 상단 여백 추가 */
+}
+
+.post-list {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px; /* 게시글 목록 상단 여백 추가 */
+}
+
+.post-list h2 {
+  font-size: 15px; /* 게시글 목록 제목을 좀 더 크게 설정 */
+}
+
+/* 추가된 스타일 */
+.search-container input[type="text"] {
+  margin-right: 10px; /* 검색 입력창과 버튼 사이 간격 조정 */
+}
+
+.search-container button {
+  font-size: 12px; /* 검색 버튼 텍스트 크기 설정 */
+}
+
+.footer-container button {
+  font-size: 14px; /* 뒤로가기 버튼 텍스트 크기 설정 */
+}

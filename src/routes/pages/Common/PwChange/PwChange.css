@@ -1,0 +1,41 @@
+.pwchange-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .pwchange-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .PwChange-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .PwChange-button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .PwChange-button button:nth-child(1) {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .PwChange-button button:nth-child(2) {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .PwChange-button button:hover {
+    opacity: 0.8;
+  }

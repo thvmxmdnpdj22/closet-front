@@ -1,0 +1,51 @@
+.findid-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .verification-container {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 80px);
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-co {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  button.back-button {
+    background-color: #dc3545;
+  }
+  
+  button.back-button:hover {
+    background-color: #bd2130;
+  }

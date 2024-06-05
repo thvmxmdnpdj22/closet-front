@@ -227,7 +227,7 @@ const MainPresenter = ({ appName, onSearch, onSort, searchQuery, setSearchQuery,
                         <p>{selectedPost.description}</p>
                     </div>
                 </div>
-            )}
+            </DBConnectTest>
         </div>
     );
 };
