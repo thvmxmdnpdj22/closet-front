@@ -167,10 +167,10 @@ const MainPresenter = ({ appName, onSearch, onSort, searchQuery, setSearchQuery,
         <div>
             <h1>{appName}</h1>
             <div className="header-buttons">
-                <button onClick={() => console.log("로그인 버튼 클릭")}>로그인</button>
+                <button onClick={() => navigate('/signin')}>로그인</button>
                 <button onClick={() => navigate('/ask')}>고객센터</button>
-                <button onClick={() => console.log("커뮤니티 버튼 클릭")}>커뮤니티</button>
-                <button onClick={() => console.log("마이페이지 버튼 클릭")}>마이페이지</button>
+                <button onClick={() => navigate("/community")}>커뮤니티</button>
+                <button onClick={() => navigate("/postpage")}>마이페이지</button>
             </div>
             <div className="search-container">
                 <input
@@ -227,7 +227,7 @@ const MainPresenter = ({ appName, onSearch, onSort, searchQuery, setSearchQuery,
                         <p>{selectedPost.description}</p>
                     </div>
                 </div>
-            </DBConnectTest>
+            )}
         </div>
     );
 };

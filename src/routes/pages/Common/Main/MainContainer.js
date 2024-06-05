@@ -11,7 +11,6 @@ import MainPresenter from "./MainPresenter";
     * Presenter: 불러온 데이터를 토대로 페이지에 출력, 함수 사용
 */
 const MainContainer = () => {
-    const navigate = useNavigate();
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleSearch = () => {
@@ -106,8 +105,6 @@ const MainContainer = () => {
 
             SignIn={SignIn}
             isSignIn={isSignIn}
-
-            navigate={navigate}
         />
     );
 }
