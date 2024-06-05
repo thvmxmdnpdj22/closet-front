@@ -12,3 +12,7 @@ export { default as FindPw } from './Common/FindPw';
 export { default as PwChange} from './Common/PwChange';
 export { default as Community} from './Common/Community';
 export { default as PostPage } from './Common/PostPage';
+export { default as MyPage } from './Common/MyPage';
+export { default as View } from './Common/View';
+export { default as Pagination} from './Common/Pagination';
+export { default as Profile} from './Common/Profile';

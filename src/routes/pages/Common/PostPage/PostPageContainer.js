@@ -16,6 +16,15 @@ const PostPageContainer = () => {
             return; // 제목 또는 내용이 비어있으면 함수 실행 중지
         }
         const postContent = { title: title, content: content };
+        const posts = JSON.parse(localStorage.getItem('post'));
+        if (!posts) {
+            const postArr = [postContent];
+            localStorage.setItem('post', JSON.stringify(postArr));
+            navigate("/community");
+            return;
+        }
+        posts.push(postContent);
+        localStorage.setItem('post', JSON.stringify(posts));
         console.log(postContent);
         navigate("/community");
     };

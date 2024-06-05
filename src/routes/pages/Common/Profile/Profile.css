@@ -1,0 +1,57 @@
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 */
+    gap: 20px;
+    width: 100%;
+    max-width: 600px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 중앙에 배치 */
+}
+
+.profile-image {
+    text-align: center;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* 원형 이미지로 만들기 */
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    width: 100%;
+}
+
+.profile-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 입력 필드를 왼쪽 정렬 */
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.profile-field label {
+    margin-bottom: 5px; /* 라벨과 입력 필드 사이의 간격 */
+    font-weight: bold; /* 라벨을 굵게 표시 */
+}
+
+.profile-field input {
+    width: 100%; /* 입력 필드가 부모의 너비를 차지하도록 설정 */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-field button {
+    margin-top: 5px; /* 버튼과 입력 필드 사이의 간격 */
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    align-self: flex-end; /* 버튼을 오른쪽에 배치 */
+}

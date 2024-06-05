@@ -1,32 +1,32 @@
 .signup-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
-  
-  .signup-container h1 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .button-control {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .button-control button {
-    margin-right: 10px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 3px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .button-control button:hover {
-    background-color: #0056b3;
-  }
+  max-width: 600px; /* 컨테이너의 최대 너비를 600px로 설정합니다. */
+  margin: 50px auto; /* 상하 마진을 50px, 좌우 마진을 자동으로 설정하여 가운데 정렬합니다. */
+  padding: 20px; /* 컨테이너 내부의 여백을 모든 방향으로 20px로 설정합니다. */
+  border: 1px solid #ccc; /* 컨테이너 테두리를 1px 굵기의 회색(#ccc)으로 설정합니다. */
+  border-radius: 5px; /* 컨테이너의 모서리를 둥글게 만들어 주는 데, 둥근 정도를 5px로 설정합니다. */
+  background-color: #f9f9f9; /* 컨테이너의 배경색을 연한 회색(#f9f9f9)으로 설정합니다. */
+}
+
+.signup-container h1 {
+  margin-bottom: 35px; /* 제목(h1) 아래쪽의 여백을 20px로 설정합니다. */
+  text-align: left; /* 제목(h1)의 텍스트를 가운데 정렬합니다. */
+}
+
+.button-control {
+  margin-top: 20px; /* 버튼을 감싸는 div의 위쪽 여백을 20px로 설정합니다. */
+  text-align: center; /* 버튼을 감싸는 div 내부의 내용(버튼 등)을 가운데 정렬합니다. */
+}
+
+.button-control button {
+  margin-right: 10px; /* 각 버튼의 오른쪽 여백을 10px로 설정합니다. (마지막 버튼 제외) */
+  padding: 8px 16px; /* 버튼 내부의 상하 여백을 8px, 좌우 여백을 16px로 설정합니다. */
+  border: none; /* 버튼의 테두리를 제거합니다. */
+  border-radius: 3px; /* 버튼의 모서리를 둥글게 만들어 주는 데, 둥근 정도를 3px로 설정합니다. */
+  background-color: #007bff; /* 버튼의 배경색을 파란색(#007bff)으로 설정합니다. */
+  color: #fff; /* 버튼 내부의 텍스트 색상을 흰색(#fff)으로 설정합니다. */
+  cursor: pointer; /* 마우스 커서를 버튼 위에 올리면 포인터 모양으로 바뀝니다. */
+}
+
+.button-control button:hover {
+  background-color: #0056b3; /* 마우스가 버튼 위에 올라가 있을 때, 버튼의 배경색을 더 진한 파란색(#0056b3)으로 변경합니다. */
+}

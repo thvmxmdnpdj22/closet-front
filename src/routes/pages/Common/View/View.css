@@ -1,0 +1,24 @@
+.view-container {
+    padding: 20px;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  .title h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .content {
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    margin-bottom: 20px;
+  }
+  
+  .info p {
+    margin: 5px 0;
+  }

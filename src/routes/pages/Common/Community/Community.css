@@ -1,53 +1,139 @@
-/* Community.css */
+/* 전체 컨테이너 스타일 */
 .community-container {
-  max-width: 800px;
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* 헤더 스타일 */
 .header-container {
   display: flex;
-  align-items: center; /* 검색 입력창과 버튼을 수직 중앙 정렬 */
-  justify-content: space-between; /* 커뮤니티 글자와 검색 입력창 사이에 간격 생성 */
-  margin-bottom: 20px; /* 하단 여백 추가 */
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
 }
 
 .community-title {
-  font-size: 24px; /* 커뮤니티 제목을 좀 더 크게 설정 */
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
 }
 
 .search-container {
   display: flex;
-  align-items: center; /* 검색 입력창과 버튼을 수직 중앙 정렬 */
+  align-items: center;
 }
 
-.footer-container {
-  display: flex;
-  align-items: center; /* 뒤로가기 버튼을 수직 중앙 정렬 */
-  justify-content: space-between; /* 왼쪽과 오른쪽을 최대한 멀리 배치 */
-  margin-top: 20px; /* 상단 여백 추가 */
-}
-
-.post-list {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 5px;
-  margin-top: 10px; /* 게시글 목록 상단 여백 추가 */
-}
-
-.post-list h2 {
-  font-size: 15px; /* 게시글 목록 제목을 좀 더 크게 설정 */
-}
-
-/* 추가된 스타일 */
 .search-container input[type="text"] {
-  margin-right: 10px; /* 검색 입력창과 버튼 사이 간격 조정 */
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
 }
 
 .search-container button {
-  font-size: 12px; /* 검색 버튼 텍스트 크기 설정 */
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+/* 푸터 스타일 */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+  margin-top: 20px;
 }
 
 .footer-container button {
-  font-size: 14px; /* 뒤로가기 버튼 텍스트 크기 설정 */
+  padding: 10px 15px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-container button:hover {
+  background-color: #5a6268;
+}
+
+.write-post-container button {
+  background-color: #28a745;
+}
+
+.write-post-container button:hover {
+  background-color: #218838;
+}
+
+/* 게시글 목록 스타일 */
+.post-list {
+  margin-top: 20px;
+}
+
+.post-list h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* 테이블 열 비율 설정 */
+th.no {
+  width: 5%;
+}
+
+th.title {
+  width: 30%;
+}
+
+th.content {
+  width: 40%;
+}
+
+th.author {
+  width: 10%;
+}
+
+th.view {
+  width: 7.5%;
+}
+
+th.date {
+  width: 7.5%;
 }

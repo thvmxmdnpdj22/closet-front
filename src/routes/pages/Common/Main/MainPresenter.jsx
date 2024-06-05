@@ -102,6 +102,8 @@ const MainPresenter = ({
 
                
                     <button onClick={() => navigate('/signin')}>로그인</button>
+
+                    <button onClick={() => navigate('./mypage')}>마이페이지</button>
                     
                 </div>
             </DBConnectTest>
