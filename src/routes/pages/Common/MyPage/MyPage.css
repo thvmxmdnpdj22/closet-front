@@ -1,0 +1,71 @@
+.mypage-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.mypage-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.mypage-header h1 {
+    cursor: pointer;
+    margin: 0;
+    color: #007bff;
+}
+
+.mypage-content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #e9ecef;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar button {
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.sidebar button:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.user-home, .info-update, .liked-products, .user-posts, .transactions {
+    margin-bottom: 20px;
+}
+
+.user-home p, .info-update form, .liked-products ul, .user-posts ul, .transactions ul {
+    margin: 10px 0;
+}
+
+.info-update form input {
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.info-update form button {
+    padding: 5px 10px;
+}

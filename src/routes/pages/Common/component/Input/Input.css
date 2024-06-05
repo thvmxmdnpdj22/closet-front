@@ -1,31 +1,22 @@
-/* .Input-id {
-    width: 20%;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-} */
 .Input-id {
-    margin-bottom: 15px; /* 아이디 입력 부분과 다른 입력 요소 사이의 간격 */
-  }
-  
-  .Input-id h4 {
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .Input-id input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .Input-id input:focus {
-    outline: none;
-    border-color: #007bff; /* 포커스 시 파란색 테두리 */
-  }
+  margin-bottom: 15px; /* 아이디 입력 부분과 다른 입력 요소 사이의 간격 */
+}
+
+.Input-id h4 {
+  margin-bottom: 5px; /* 제목(h4) 아래쪽의 여백을 5px로 설정 */
+  font-size: 16px; /* 글자 크기를 16px로 설정 */
+  font-weight: bold; /* 글자 두께를 굵게 설정 */
+}
+
+.Input-id input {
+  width: 100%; /* 입력 필드의 너비를 부모 요소의 100%로 설정 */
+  padding: 8px; /* 입력 필드 내부의 여백을 8px로 설정 */
+  border: 1px solid #ccc; /* 입력 필드의 테두리를 1px 회색(#ccc)으로 설정 */
+  border-radius: 5px; /* 입력 필드의 모서리를 5px 둥글게 설정 */
+  box-sizing: border-box; /* 패딩과 테두리를 너비 계산에 포함시킴 */
+}
+
+.Input-id input:focus {
+  outline: none; /* 입력 필드가 포커스를 받을 때 기본 테두리 제거 */
+  border-color: #007bff; /* 입력 필드가 포커스를 받을 때 테두리 색상을 파란색(#007bff)으로 변경 */
+}

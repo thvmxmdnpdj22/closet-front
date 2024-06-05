@@ -170,7 +170,7 @@ const MainPresenter = ({ appName, onSearch, onSort, searchQuery, setSearchQuery,
                 <button onClick={() => navigate('/signin')}>로그인</button>
                 <button onClick={() => navigate('/ask')}>고객센터</button>
                 <button onClick={() => navigate("/community")}>커뮤니티</button>
-                <button onClick={() => navigate("/postpage")}>마이페이지</button>
+                <button onClick={() => navigate("/mypage")}>마이페이지</button>
             </div>
             <div className="search-container">
                 <input
@@ -226,6 +226,14 @@ const MainPresenter = ({ appName, onSearch, onSort, searchQuery, setSearchQuery,
                         <p>가격: {selectedPost.price}</p>
                         <p>{selectedPost.description}</p>
                     </div>
+
+                    <button onClick={() => navigate('/signup')}>회원가입</button>
+
+               
+                    <button onClick={() => navigate('/signin')}>로그인</button>
+
+                    <button onClick={() => navigate('./mypage')}>마이페이지</button>
+                    
                 </div>
             )}
         </div>

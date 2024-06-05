@@ -1,6 +1,5 @@
 import React from "react";
 import './Input.css'
-import { SignUpBox } from "../../SignUp/component/SignUPBox";
 
 export const Input =({
     title,

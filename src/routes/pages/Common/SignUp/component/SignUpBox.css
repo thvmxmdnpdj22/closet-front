@@ -1,0 +1,131 @@
+/* SignUpBox.css */
+
+.signup-box {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-box .input-group1,
+.signup-box .input-group2,
+.signup-box .input-group3,
+.signup-box .input-group4,
+.signup-box .input-group5,
+.signup-box .input-group6,
+.signup-box .input-group7,
+.signup-box .input-group8,
+.signup-box .input-group9,
+.signup-box .input-group0 {
+    margin-bottom: 15px;
+}
+
+.signup-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.signup-box input {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signup-box .address-group {
+    display: flex;
+    align-items: center;
+}
+
+.signup-box .address-group input {
+    flex: 1;
+}
+
+.signup-box .address-button {
+    margin-left: 10px;
+}
+
+.signup-box .address-button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signup-box .address-button button:hover {
+    background-color: #0056b3;
+}
+
+.signup-box button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signup-box button:hover {
+    background-color: #0056b3;
+}
+
+.signup-box .postcode-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.signup-box .postcode-popup .close-button {
+    text-align: right;
+}
+
+.signup-box .postcode-popup .close-button button {
+    background-color: #dc3545;
+}
+
+.signup-box .postcode-popup .close-button button:hover {
+    background-color: #c82333;
+}
+/* SignUpBox.css */
+.postcode-popup {
+    position: fixed; /* 모달 창을 화면 중앙에 고정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 정확한 중앙 정렬을 위해 */
+    width: 400px; /* 모달 창의 너비 */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 모달 창에 그림자 효과 */
+    z-index: 1000; /* 다른 요소들 위에 모달 창이 뜨도록 */
+}
+
+.close-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 어두운 배경 */
+    z-index: 999; /* 모달 창 바로 아래 */
+}

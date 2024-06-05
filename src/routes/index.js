@@ -3,13 +3,13 @@
     * @Made_by_HeoGwan
 */
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Outlet} from "react";
 
 /* URL 설정을 위한 라이브러리 */
 import { Route, Routes, useFetcher } from 'react-router-dom';
 
 /* 사용자가 만든 페이지를 모아놓은 파일에서 페이지를 불러온다. */
-import { Main, Ask, SignUp, SignIn, FindId, FindPw, PwChange, Community,PostPage} from "./pages";
+import { Main, Ask, SignUp, SignIn, FindId, FindPw, PwChange, Community, PostPage, MyPage, View, Pagination, Profile} from "./pages";
 
 /* 아래 부분에서 링크와 페이지를 연결시킨다. */
 const Router = () => {
@@ -69,6 +69,20 @@ const Router = () => {
                 <Route
                     path="postpage"
                     element={<PostPage/>}></Route>
+                <Route path="mypage" element={<MyPage />}>
+                    <Route path="profile" element={<Profile/>}/>
+                </Route>
+                <Route
+                    path="view"
+                    element={<View/>}/>
+                <Route path="viewpage" element={<View />} />
+                <Route
+                    path="pagination"
+                    element={<Pagination/>}></Route>
+                {/* <Route
+                    path="profile"
+                    element={<Profile/>}
+                    /> */}
             </Routes>
         </div>
     )

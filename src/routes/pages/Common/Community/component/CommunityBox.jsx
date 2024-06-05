@@ -3,15 +3,15 @@ import { Input } from "../../component/Input/Input";
 
 export const CommunityBox = ({
     searchTerm,
-    handleSearchTerm
+    setSearchTerm
 }) =>{
     return(
-        <div className="notepg-">
+        <div className="community-container box">
             <Input
                 type={"text"}
                 placeholder={"검색어를 입력하세요."}
                 value={searchTerm}
-                onChange={handleSearchTerm}/>
+                onChange={(e)=>setSearchTerm(e.target.value)}/>
         
         </div>
     )
