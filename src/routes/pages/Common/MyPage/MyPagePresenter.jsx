@@ -24,7 +24,7 @@ const MyPagePresenter = ({
                         <p>이름: {userInfo.name}</p>
                         <p>이메일: {userInfo.email}</p>
                         <p>전화번호: {userInfo.phone}</p>
-                        <button onClick={() => navigate('/')}>뒤로가기</button>
+                        <button className='login-button' onClick={() => navigate('/')}>뒤로가기</button>
                     </div>
                     <div className="user-posts">
                         <h2>나의 게시글</h2>

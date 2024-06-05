@@ -20,7 +20,7 @@ const FindPwPresenter =({
                 />
             <div>
                 <button onClick={handleFindPassword}>확인</button> 
-                <button onClick={() => {navigate(-1)}}>뒤로가기</button>
+                <button  onClick={() => {navigate(-1)}}>뒤로가기</button>
             </div>
         </div>
     )

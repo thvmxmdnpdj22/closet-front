@@ -21,7 +21,7 @@ h1 {
     padding: 8px 12px;
     font-size: 1rem;
     border: none;
-    background-color: #f0f0f0;
+    background-color: pink;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -139,3 +139,5 @@ h1 {
 .post-buttons button {
   width: 10%;
 }
+
+

@@ -29,16 +29,16 @@ const FindIdPresenter = ({
                         value={verificationCode}
                         onChange={(e) => setVerificationCode(e.target.value)}
                     />
-                    <button onClick={handleVerificationSubmit}>확인</button>
+                    <button className="login-button" onClick={handleVerificationSubmit}>확인</button>
                 </div>
             )}
             {!verificationCodeSent && (
-                <button onClick={handlePhoneNumberSubmit}>인증번호 요청</button>
+                <button className="login-button" onClick={handlePhoneNumberSubmit}>인증번호 요청</button>
             )}
             <div className="button-co">
             {/* <button  onClick={handlePhoneNumberSubmit} >인증번호</button> */}
             <div>
-                <button onClick={() => {navigate('/signin')}}>뒤로가기</button>
+                <button className="login-button" onClick={() => {navigate('/signin')}}>뒤로가기</button>
             </div>
             </div>
         </div>

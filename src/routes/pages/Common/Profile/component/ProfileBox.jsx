@@ -40,7 +40,7 @@ const ProfileBox = ({
                     style={{ display: 'none' }} 
                     onChange={onChangeImage} 
                 />
-                <button onClick={onClickFileBtn}>이미지 선택</button>
+                <button className="login-button" onClick={onClickFileBtn}>이미지 선택</button>
             </div>
             <div className="profile-info">
                 <div className="profile-field">
